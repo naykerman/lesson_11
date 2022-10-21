@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:regular&display=swap');
+.wrapper {
+font-family: Lato;
+max-width: 1230px;
+margin: 0 auto;
+}
+.header {
+
+	top: 0;
+	left: 0;
+	margin-bottom: 50px;
+	background-color: blue;
+	max-width: 1230px;
+}
+.header__menu {
+}
+.header__block {
+	margin-left: 10px;
+	position: relative;
+	left: 365px;
+	display: inline-block;
+	font-size: 46px;
+	text-align: center;
+}
+.block-header {
+}
+.header__submenu {
+	position: absolute;
+	top: 100%;
+	left: -50px;
+	padding: 15px;
+	background-color: #7A956B;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+	}
+	.block-header:hover .header__submenu{
+		visibility: visible;
+		opacity: 1;
+		top: 100%;
+		z-index: 10;
+	}
+.menu__container {
+background-color: green;
+height:800px;
+}
+
+.block__title {
+	text-align: center;
+	font-size: 36px;;
+	border: 5px dotted blue;
+	background-color: red;
+	height: 40px;
+	margin: 0px 20px;
+	position: sticky;
+	top: 0%;
+}
+
+.car__container {
+	position: relative;
+	
+}
+.car__body {
+	position: absolute;
+	right: 400px;
+	top: 327px;
+	width: 20%;
+	z-index: 2;
+	transition: all 3.0s ease 0s;
+}
+.car__background{
+	position: relative;
+	width: 100%;
+	z-index: 1;
+
+}
+.car__background:hover +.car__body{
+	right: 890px;
+}
+.fixed__test {
+	background-color: #794f45;
+	z-index: 3;
+	position: fixed;
+	bottom: 0px;
+	max-width: 1230px;
+}
